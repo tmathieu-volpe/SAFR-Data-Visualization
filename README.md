@@ -1,6 +1,6 @@
 # SAFR Visual Profiles
 
-Python scripts to generate SAFR chart images from Excel exports and compile them into a Word appendix.
+Python scripts to generate SAFR chart images from Excel exports.
 
 ## What this repo includes
 
@@ -11,14 +11,12 @@ Python scripts to generate SAFR chart images from Excel exports and compile them
   - `visualize_near_misses.py`
   - `visualize_speeds.py`
   - `visualize_parking.py`
-- Appendix compiler:
-  - `compile_visuals_to_word.py`
 
 ## What is intentionally not included
 
 - Local machine paths
 - Raw Excel files
-- Generated charts and Word outputs
+- Generated charts and other local outputs
 
 The scripts now accept portable command-line arguments and environment-variable defaults.
 
@@ -53,12 +51,6 @@ python visualize_speeds.py --input-dir "data/speeds" --output-dir "speed visuals
 python visualize_parking.py --input-dir "data/parking" --output-dir "parking visuals"
 ```
 
-Compile all generated profile images into a single Word file:
-
-```bash
-python compile_visuals_to_word.py --base-folder . --output-file SAFR_Visual_Appendix.docx
-```
-
 ## Environment variable overrides (optional)
 
 - `SAFR_COUNTS_INPUT_DIR`, `SAFR_COUNTS_OUTPUT_DIR`
@@ -67,7 +59,6 @@ python compile_visuals_to_word.py --base-folder . --output-file SAFR_Visual_Appe
 - `SAFR_NEARMISS_INPUT_DIR`, `SAFR_NEARMISS_OUTPUT_DIR`
 - `SAFR_SPEEDS_INPUT_DIR`, `SAFR_SPEEDS_OUTPUT_DIR`
 - `SAFR_PARKING_INPUT_DIR`, `SAFR_PARKING_OUTPUT_DIR`
-- `SAFR_BASE_FOLDER`, `SAFR_APPENDIX_OUTPUT_FILE`
 
 ## Notes
 

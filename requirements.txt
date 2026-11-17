@@ -2,5 +2,4 @@ matplotlib
 numpy
 openpyxl
 pandas
-python-docx
 seaborn
