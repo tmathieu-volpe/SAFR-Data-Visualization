@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local data and generated artifacts
+*.xlsx
+*.xls
+*.csv
+*.docx
+
+adt visuals/
+count visuals/
+grouping visuals/
+near miss visuals/
+parking visuals/
+speed visuals/
+
+# Optional local data staging
+data/
